@@ -11,6 +11,7 @@ Feb2007$Global_active_power=as.numeric(Feb2007$Global_active_power)
 
 #plot histogram
 hist(Feb2007$Global_active_power,col="red",xlab="Global Active Power (kilowatts)", ylab="Frequency",main="Global Active Power")
+axis(side=2, at= seq(0,1200, by=200), labels=TRUE)
 
 #save to file
 dev.copy(png, file="plot1.png", width=480, height=480)
