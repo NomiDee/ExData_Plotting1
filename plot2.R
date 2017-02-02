@@ -1,5 +1,5 @@
 #Import full dataset
-dataFile<-"C:/Users/nh14/Dropbox (KiTEC)/Data Science - Coursera/data/household_power_consumption.txt"
+dataFile<-"C:/Users/Data Science - Coursera/data/household_power_consumption.txt"
 data<-read.table(dataFile, header=TRUE, sep=';', stringsAsFactors=FALSE, dec=".")
 
 #Subset the data
