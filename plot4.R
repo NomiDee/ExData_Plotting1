@@ -1,5 +1,5 @@
 #Import full dataset
-dataFile<-"C:/Users/nh14/Dropbox (KiTEC)/Data Science - Coursera/data/household_power_consumption.txt"
+dataFile<-"C:/Users/Data Science - Coursera/data/household_power_consumption.txt"
 data<-read.table(dataFile, header=TRUE, sep=';', stringsAsFactors=FALSE, dec=".")
 
 #Subset the data
@@ -14,7 +14,7 @@ datetime <- paste(as.Date(Feb2007$Date), Feb2007$Time)
 Feb2007$datetime<- as.POSIXct(datetime)
 
 #Open png device
-png(file="C:/Users/nh14/Dropbox (KiTEC)/Data Science - Coursera/Exploratory data analysis/plot4.png", width=480, height=480)
+png(file="C:/Users/Data Science - Coursera/Exploratory data analysis/plot4.png", width=480, height=480)
 
 #plot histogram
 par(mfrow = c(2, 2), mar = c(4, 4, 2, 1), oma = c(0, 0, 2, 0))
